@@ -71,7 +71,7 @@ header {
     display: flex;
   }
   
-  .weather-app-icon {
+  .icon {
     font-size: 44px;
     margin-top: 22px;
   }

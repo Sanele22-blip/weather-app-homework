@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/styles.css">
-    <title>My weather homework</title>
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+  </head>
+  <body>
     <div class="weather-app">
-        <header>
-            <form class="search-form">
-                <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
-                <input type="submit" value="search" class="search-form-button">
-            </form>
-        </header>
-        <main>
-            <div class="weather-app-data">
-                <div>
-                    <h1 class="weather-app-city">
-Carletonville
-                    </h1>
-                    <p class="weather-app-details">
-Saturday 14:25, partly cloudy
-<br>
-Humidity: <strong>55%</strong>, Wind: <strong>11 km/h</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="weather-app-temperature-container">
-              <div class="icon">🌤️</div>
-              <div class="weather-app-temperature">26</div>
-              <div class="weatehr-app-unit">°C</div>
-            </div>
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Carletonville</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, partly cloudy <br />
+              Humidity: <strong>55%</strong>, Wind: <strong>11km/h</strong>
+            </p>
           </div>
-        </main>
-        <footer>
-            This project was coded by 
-            <a href="https://github.com/Sanele22-blip/Coding-workshop" target="_blank">Sanele Xegwana</a>,
-            is
-            <a href="https://github.com/Sanele22-blip/Coding-workshop" target="_blank"
-              >open-sourced on GitHub</a
-            >
-            and
-            <a href="https://app.netlify.com/sites/zoemagcaleka-weather-app-project/overview" target="_blank"
-              >hosted on Netlify</a
-            >
-          </footer>
-</body>
-<script src="src/index.js"></script>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌥</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Sanele22-blip/Coding-workshop" target="_blank">Sanele Xegwana</a> and is
+          <a href="https://github.com/Sanele22-blip/Coding-workshop" target="_blank"> on GitHub</a> and
+          <a href="" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
 </html>
